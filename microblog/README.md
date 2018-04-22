@@ -7,8 +7,8 @@ After the basic structure was completed, I turned on to the SurfingPenguin proje
 ### Functionalities
 User-associated functions are completed, the website now provides the following usage:
 > Register,  
-> Login, 
-> Write self-introduction, 
+> Login,  
+> Write self-introduction,  
 > Follow other users 
 
 Functions to post articles are left undone.
