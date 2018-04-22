@@ -1,0 +1,49 @@
+hand written
+problem 5
+(1) 321645
+1st: 321654
+2nd: 324156
+3rd: 324165
+
+(2)
+pi[k] to pi[k+1]
+for(i=n-1;i>0;i--)
+	if(pi[k][i] < pi[k][n])
+		record i
+		for(x=i+1;x<=n;x++)
+			if(pi[k][x] < pi[k][i])
+				record x
+				break
+		break
+
+for(j=1;j<i;j++)
+	pi[k+1][j]=pi[k][j]
+pi[k+1][i] = pi[k][x]
+pi[k+1][i+1] = pi[k][i]
+pi[k+1][i+2..n] = pi[k][n..i+1] except pi[k][x]
+
+(3)
+(aggregate method)
+the last k number will change once every c(k) times
+c(k) = 	1 				if k=1,2
+		(k-1)(k-2)		if k>=3
+thus,
+total num of operations in n serial calls
+= n + n + n/2 + n/6 + n/12 + ... < 3n
+=> total cost = O(n)
+=> amortized cost = O(1)
+
+problem 6
+(1)
+x,y,z,w
+1,1,0,1
+1,0,1,0
+0,1,1,0
+0,0,1,1
+
+(2)
+(iii)
+if E has a solution
+-> z=0 -> g=l=1 -> f=k=0 -> j=e=1 -> i=d=1
+-> c=1 -> b=h=0 -> a and the block under 2 should be 1 => contradiction
+  
