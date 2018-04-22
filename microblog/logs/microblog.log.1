@@ -1,0 +1,76 @@
+2018-02-21 20:39:14,540 ERROR: Exception on /user/susan [GET] [in /Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/app/routes.py", line 89, in user
+    return render_template('user.html',user=user, posts=posts)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/app/templates/user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/app/templates/user.html", line 23, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2018-02-21 20:39:15,942 ERROR: Exception on /user/susan [GET] [in /Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/app.py:1560]
+Traceback (most recent call last):
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask_login/utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/app/routes.py", line 89, in user
+    return render_template('user.html',user=user, posts=posts)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/venv/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/app/templates/user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/app/templates/base.html", line 31, in top-level template code
+    {% block content %}{% endblock %}
+  File "/Users/changyashin/Desktop/winter_vacation_project/microblog/app/templates/user.html", line 23, in block "content"
+    {% for post in posts %}
+TypeError: 'Pagination' object is not iterable
+2018-02-21 20:43:32,355 INFO: Microblog startup [in /Users/changyashin/Desktop/winter_vacation_project/microblog/app/__init__.py:41]
+2018-02-21 20:43:37,359 INFO: Microblog startup [in /Users/changyashin/Desktop/winter_vacation_project/microblog/app/__init__.py:41]
